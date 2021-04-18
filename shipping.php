@@ -29,7 +29,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="shortcut icon" href="img/lifestyleStore.png" />
         <title>Store</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,22 +52,22 @@
 					<div class="row">
 					  <div class="col-50">
 						<h3>Billing Details</h3>
-						<label for="fname"><i class="fa fa-user"></i> Full Name</label>
-						<input type="text" id="fname" name="firstname" placeholder="John M. Doe">
-						<label for="email"><i class="fa fa-envelope"></i> Email</label>
-						<input type="text" id="email" name="email" placeholder="john@example.com">
-						<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
-						<input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+						<label for="adr"><i class="fa fa-address-card-o"></i> Address 1</label>
+						<input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+						<label for="adr2"><i class="fa fa-address-card-o"></i> Address 2</label>
+						<input type="text" id="adr" name="address" placeholder="(Optional)">
+						<label for="cnumber"><i class="fa fa-address-card-o"></i> Contact Number</label>
+						<input type="text" id="adr" name="address" placeholder="0912-123-1234" required>
 						<label for="city"><i class="fa fa-institution"></i> City</label>
-						<input type="text" id="city" name="city" placeholder="Quezon City">
+						<input type="text" id="city" name="city" placeholder="Quezon City" required>
 						<div class="row">
 						  <div class="col-50">
-							<label for="state">State</label>
-							<input type="text" id="state" name="state" placeholder="Northern Luzon">
+							<label for="state">Province</label>
+							<input type="text" id="state" name="state" placeholder="Pampanga" required>
 						  </div>
 						  <div class="col-50">
 							<label for="zip">Zip</label>
-							<input type="text" id="zip" name="zip" placeholder="1100">
+							<input type="text" id="zip" name="zip" placeholder="1100" required>
 						  </div>
 						</div>
 					  </div>
@@ -82,19 +81,19 @@
 						  <i class="fa fa-cc-discover" style="color:orange;"></i>
 						</div>
 						<label for="cname">Name on Card</label>
-						<input type="text" id="cname" name="cardname" placeholder="John More Doe">
+						<input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
 						<label for="ccnum">Credit card number</label>
-						<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+						<input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
 						<label for="expmonth">Exp Month</label>
-						<input type="text" id="expmonth" name="expmonth" placeholder="September">
+						<input type="text" id="expmonth" name="expmonth" placeholder="September" required>
 						<div class="row">
 						  <div class="col-50">
 							<label for="expyear">Exp Year</label>
-							<input type="text" id="expyear" name="expyear" placeholder="2018">
+							<input type="text" id="expyear" name="expyear" placeholder="2018" required>
 						  </div>
 						  <div class="col-50">
 							<label for="cvv">CVV</label>
-							<input type="text" id="cvv" name="cvv" placeholder="352">
+							<input type="text" id="cvv" name="cvv" placeholder="352" required>
 						  </div>
 						</div>
 					  </div>
@@ -125,9 +124,8 @@
 							</tbody>
 						</table>
 					</div>
-					<a href="products.php">
-						<input type="button" value="Continue to checkout" class="btn"</label>
-					</a>
+						<a href="products.php">
+							<input type="button" value="Continue to checkout" class="btn" label>
 			  	  </div>
 				</div>
 			  </div>
