@@ -1,0 +1,134 @@
+.container .title, .container-fluid .title {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px;
+}
+
+@media (min-width: 768px)
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 130px;
+}
+
+.title {
+    padding-top: @title-padding;
+    padding-bottom: @title-padding;
+    margin-bottom: @title-padding;
+    color: @title-color;
+    background-color: @title-bg;
+
+    h1,
+    .h1 {
+        color: @title-heading-color;
+    }
+
+    p {
+        margin-bottom: (@title-padding / 2);
+        font-size: @title-font-size;
+        font-weight: 200;
+    }
+
+    > hr {
+        border-top-color: darken(@title-bg, 10%);
+    }
+
+    .container &,: ;
+    .container-fluid & {
+        border-radius: @border-radius-large;
+        padding-left: (@grid-gutter-width / 2);
+        padding-right: (@grid-gutter-width / 2);
+    }
+
+    .container {
+    max-width: 100%;
+    }
+
+    @media screen and (min-width: @screen-sm-min) {
+        padding-top: (@title-padding * 1.6);
+        padding-bottom: (@title-padding * 1.6);
+
+        .container &,
+        .container-fluid & {
+           padding-left: (@title-padding * 2);
+           padding-right: (@title-padding * 2);
+        }
+
+        h1,
+        .h1 {
+            font-size: @title-heading-font-size;
+        }
+    }
+}
+
+@media screen and (min-width: 768px)
+<style>
+.title {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.title {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #d35266;
+}
+
+* {
+    /* -webkit-box-sizing: border-box; */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+@media screen and (min-width: 768px)
+.title .h1, .title h1 {
+    font-size: 100px;
+    color: inherit;
+}
+
+h1 {
+    margin: .67em 0;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    position: relative;
+    font: -30px;
+}
+
+img {
+    height: 280px;
+}
+
+.title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #d35266;
+    height: 300px;
+}
+
+h4 {
+    display: block;
+    text-align: -webkit-center;
+    font-size: 19px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.navbar-inverse {
+    background-color: #383838;
+    border-color: #383838;
+    height: 50px;
+}
